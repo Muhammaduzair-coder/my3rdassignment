@@ -1,0 +1,491 @@
+
+body{background-color: rgb(250, 250, 250); 
+    scroll-behavior: smooth;}
+
+
+
+@media only screen and (max-width: 600px) {
+    .cont1,
+    .cont2 {
+      flex-direction: column;    }
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+.container1 .container2{display: flex;  flex-direction: column;}
+
+
+}
+
+html { box-sizing: border-box;}
+
+
+
+
+/* ---header ----*/
+
+
+/* ---first container---- */
+
+img {
+    max-width: 100%;
+}
+
+.first-box { color: white; font-family: 'Open Sans', sans-serif;
+    margin: 70px auto;
+    display: flex;
+    width: 100%;
+    height: 4.3rem;
+    background-color: rgb(45, 137, 223);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    position: absolute;
+}
+
+.millions {
+    padding: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 2px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.butn {border: 1px solid transparent;
+    height: 1.6rem;
+    padding: px;
+    border-radius: 7px;
+    font-size: 0.7em;
+    
+}
+
+.butn:hover {
+    background-color: rgb(201, 200, 200);
+    color: black;
+}
+
+.logo {
+    padding: 3px;
+    width: 27px;
+}
+
+
+/* -----nav bar----*/
+
+.second-box {font-family: 'Open Sans', sans-serif;
+    font-weight: initial;
+    display: flex;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0px;
+    box-shadow: 2px 5px 3px lightgray;
+}
+
+.second-box::before {
+    justify-content: center;
+    position: fixed;
+    background-color: green;
+}
+
+
+/* img  */
+
+.second-box img {
+    width: 200px;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 6px 9px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(39, 39, 39);
+    list-style: none;
+    text-transform: capitalize;
+    padding: 10px;
+    justify-content: right;
+}
+
+.nav-bar ul li a:hover {
+    border-radius: 20px;
+    background-color: rgb(13, 137, 209);
+    color: white;
+    padding: 10px;
+}
+
+
+/* ----wrapper ---*/
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    margin: 150px 0px;
+    padding: 14px auto;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+.thirdbox .words {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.7rem;
+    width: 96%;
+    border: 1px solid transparent;
+    background-color: rgb(45, 137, 223);
+    box-shadow: 4px 4px 3px rgb(199, 195, 195);
+}
+
+.thirdbox .intro {
+    font-family: 'Open Sans', sans-serif; 
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    color: rgb(114, 113, 113);
+    width: 75%;
+    margin: auto;
+    padding: 32px 32px;
+}
+
+
+/* introduction */
+
+.heading {display: flex;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    animation: text 3s 1;
+    margin-bottom: 20px;
+}
+
+@keyframes text {
+    0% {
+        margin-bottom: -40px;
+    }
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+.int {
+    color: rgb(13, 137, 209);
+}
+
+.duc {
+    color: green;
+}
+
+.boxes {right: 0px;
+    width: 100%;
+    height: 280px;
+    background-color: rgb(34, 86, 228);
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 2px 4px grey;
+    padding: 16px 0px;
+}
+
+
+/* working monthly */
+
+.box {
+    font-family: 'Courier New', Courier, monospace;
+    flex-basis: 25%;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    border: 1px solid transparent;
+    padding: 15px;
+    margin: auto;
+}
+
+.boxes .box img {
+    justify-content: center;
+}
+
+.boxes .box .clr {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(68, 212, 68)
+}
+
+
+/* your donation offers */
+
+.doing {
+    padding: 25px 3px;
+    font-style: initial;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.word1 {
+    color: rgb(13, 137, 209);
+}
+
+.word2 {
+    color: green;
+}
+
+#services {
+    width: 100%;
+    height: 600px;
+    padding: 10px 0px;
+    margin: 16px auto;
+}
+
+.cont1 {
+    display: flex;
+    color: rgb(13, 137, 209);
+    font-size: 1.2rem;
+    margin: 10px 44px;
+}
+
+.bo1 {margin: 5px 5px;
+    flex-basis: 30.333%;
+    height: 230px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border: 4px double rgb(167, 167, 167,0.3 );
+    background-color: white;
+    } 
+  
+
+.cont2 {
+    display: flex;
+    color: rgb(13, 137, 209);
+    font-size: 1.2rem;
+    margin: 10px 44px;
+  
+       
+}
+
+.bo2 {margin: 5px 5px;
+    flex-basis: 30.333%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(167, 167, 167,0.3 );
+    background-color: white;
+   } 
+
+
+.pic2 {
+    width: 70px;
+    padding: 10px 10px;
+}
+
+
+/* MISSIONS */
+
+#projects {margin: 24px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container1 {
+    width: 65%;
+    height: 300px;
+    margin: 10px 32px;
+    margin: auto 30px;
+   
+}
+
+.container1 h1 {
+    color: rgb(13, 137, 209);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.col1 {
+    height: 130px;
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(13, 137, 209);
+}
+
+.col2 {
+    height: 130px;
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(13, 137, 209);
+}
+
+
+/* UPCOMINGS PROJECTS */
+
+.container2 {text-align: center;
+    width: 35%;
+    height: 300px;
+    margin: auto 30px;
+    padding: 15px;
+    text-align: justify;
+    
+    color: rgb(128, 127, 127);
+    font-style: oblique;
+    font-weight: 200;
+}
+.coi{color:rgb(13, 137, 209); font-size: 1.6em; font-style: normal;}
+
+/* GALLERY */
+
+#gallery {
+    height: 300px;
+    margin: 45px auto;
+}
+
+.ig {
+    display: flex;
+    justify-content: center;
+    font: bold;
+    font-size: 2rem;
+    padding: 35px auto;
+}
+
+.wd1 {
+    color: rgb(13, 137, 209);
+}
+
+.wd2 {
+    color: green;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pic {
+    width: 140px;
+    flex: 1;
+    padding: 1px;
+}
+
+
+/* FOOTER ADRESS AND SOCIAL WEB */
+
+#footer {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    justify-content: space-around;
+    color: whitesmoke;
+    background-color: rgb(32, 36, 46);
+    left: 0px;
+}
+
+.address {
+    padding: 20px 20px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.spac {
+    padding: 6px;
+}
+
+.cnn {
+    padding: 10px;
+}
+
+
+
+
+.cont1 .cont2 {display: flex; flex-wrap: wrap;}
+.copy{height: 2em;
+     width: 100%;
+      font-weight: bold;
+       background-color: rgb(13, 137, 209);
+        display: flex; 
+        justify-content: center;
+         align-items: center; 
+         word-spacing: 0.3em;}
